@@ -16,9 +16,8 @@ router.get('/', async (ctx, next) => {
   const result = await getDb(`SELECT * from help_topic where name like '${ctx.query.name}%' limit ${limitNum}`)
   console.log(result)
   if (result) {
-    ctx.send({
-      code: ctx.status,
-      data: result || []
+    ctx.send(result, {
+      'Content-Type': 'text/plain'
     })
   } else {
     ctx.body = 'error'

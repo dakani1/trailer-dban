@@ -1,13 +1,20 @@
 module.exports = function () {
-  return async (ctx, next) => {
-    ctx.type = 'text/plain'
-    ctx.send = function (data) {
-      ctx.body = ''
-      ctx.body = {
-        resCode: ctx.status,
-        data: data
-      }
+  function render (data, options) {
+    let Opt = {
+      'Content-Type': 'application/json'
     }
+    Object.assign(Opt, options)
+    for (let item in Opt) {
+      this.set(item, Opt[item])
+    }
+    this.body = ''
+    this.body = {
+      resCode: this.status,
+      data: data
+    }
+  }
+  return async (ctx, next) => {
+    ctx.send = render.bind(ctx)
     await next()
   }
 }

@@ -4,13 +4,15 @@ const bodyParser = require('koa-bodyparser')
 const static= require('koa-static')
 const render = require('koa-art-template')
 const router = require('./router/index.js')
+const middler = require('./middleware/index.js')
 
 const app = new Koa()
 app.use(static(__dirname + '/public'))
 app.use(bodyParser())
+middler(app)
 
 render(app, {
-  root: path.join(__dirname, 'view'),
+  root: path.join(__dirname, 'views'),
   extname: '.art',
   debug: process.env.NODE_ENV !== 'production'
 })
