@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en" id="page-koa">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.7.1">
+  <meta charset="utf-8">
+  <title>Koa - art-template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://aui.github.io/koa/index.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="" href="http://aui.github.iohttps://aui.github.io/art-template/koa/index.html">
+    
+      <link rel="alternative" hreflang="" href="http://aui.github.iohttps://aui.github.io/art-template/koa/index.html">
+    
+  
+  <!-- Icon -->
+  <!--<link rel="apple-touch-icon" sizes="57x57" href="https://aui.github.io/art-template/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://aui.github.io/art-template/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://aui.github.io/art-template/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://aui.github.io/art-template/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://aui.github.io/art-template/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://aui.github.io/art-template/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://aui.github.io/art-template/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://aui.github.io/art-template/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://aui.github.io/art-template/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="https://aui.github.io/art-template/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="https://aui.github.io/art-template/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://aui.github.io/art-template/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://aui.github.io/art-template/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="https://aui.github.io/art-template/icon/mstile-144x144.png">
+  -->
+  <!-- CSS -->
+  <!-- build:css build/css/art.css -->
+  <link rel="stylesheet" href="https://aui.github.io/art-template/css/art.css">
+  <!-- endbuild -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="https://aui.github.io/art-template/atom.xml" title="art-template">
+  <!-- Open Graph -->
+  <meta name="description" content="Koa art-template view render middleware. support all feature of art-template. Installnpm install --save art-templatenpm install --save koa-art-template Exampleconst Koa = require(&apos;koa&apos;);const render =">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Koa">
+<meta property="og:url" content="http://aui.github.io/koa/index.html">
+<meta property="og:site_name" content="art-template">
+<meta property="og:description" content="Koa art-template view render middleware. support all feature of art-template. Installnpm install --save art-templatenpm install --save koa-art-template Exampleconst Koa = require(&apos;koa&apos;);const render =">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-09-30T10:05:42.291Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Koa">
+<meta name="twitter:description" content="Koa art-template view render middleware. support all feature of art-template. Installnpm install --save art-templatenpm install --save koa-art-template Exampleconst Koa = require(&apos;koa&apos;);const render =">
+  <!-- Google Analytics -->
+  
+  <!-- Github Button -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+  <%= status %> :
+  <%= message %>
+</body>
+</html>
