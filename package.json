@@ -1,0 +1,36 @@
+{
+  "name": "trailer-dban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "supervisor server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dakani1/trailer-dban.git"
+  },
+  "author": "napier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dakani1/trailer-dban/issues"
+  },
+  "homepage": "https://github.com/dakani1/trailer-dban#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "body-parser": "^1.19.0",
+    "koa": "^2.7.0",
+    "koa-art-template": "^1.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "0.0.16",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.12.0",
+    "koa-static": "^5.0.0",
+    "mysql": "^2.17.1",
+    "puppeteer": "^1.17.0"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
