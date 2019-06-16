@@ -1,5 +1,6 @@
 const Router = require('koa-router')
 const router = new Router()
+const path = require('path')
 
 const mysql = require('mysql')
 var pool = mysql.createPool({
@@ -37,6 +38,7 @@ function getDb(sql) {
 }
 
 router.get('/about', async (ctx, next) => {
+  console.log()
   ctx.render('about', {
     ip: ctx.ip,
     name: 12
