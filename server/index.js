@@ -12,6 +12,8 @@ app.use(bodyParser())
 middler(app)
 console.log('test test')
 
+require('./microService/index.js')
+
 render(app, {
   root: path.join(__dirname, 'views'),
   extname: '.art',

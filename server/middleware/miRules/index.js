@@ -10,22 +10,21 @@ module.exports = function (options) {
     var appKeys = Object.keys(app)
     rules.forEach((item, key) => {
       let { name, path } = item
-      if (appKeys.includes(name)) {
-        throw new Error(`the name of ${name} already exists!`)
+      if (!appKeys.includes(name)) {
+        const fileArr = fs.readdirSync(path)
+        if (fileArr && Array.isArray(fileArr) && fileArr.length > 0) {
+          let context = {}
+          fileArr.forEach((file, key) => {
+            let extName = Path.extname(file)
+            if (extName === '.js') {
+              let baseName = Path.basename(file, extName)
+              context[baseName] = require(Path.resolve(path, file))
+            }
+          })
+          app[name] = context;
+        }
       }
-      const fileArr = fs.readdirSync(path)
-
-      if (fileArr && Array.isArray(fileArr) && fileArr.length > 0) {
-        let context = {}
-        fileArr.forEach((file, key) => {
-          let extName = Path.extname(file)
-          if (extName === '.js') {
-            let baseName = Path.basename(file, extName)
-            context[baseName] = require(Path.resolve(path, file))
-          }
-        })
-        app[name] = context;
-      }
+      
     })
     await next()
   }
